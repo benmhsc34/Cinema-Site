@@ -1,0 +1,153 @@
+  <!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservations</title>
+    <meta name="description" content="Architecture">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+ </head>
+ <body>
+ <div id="header">
+ 	<a href="index.html" value="Open Window" onclick="openWin()"><img src="images/outdooryeah.jpg" height="135px" width="240px"></a>
+	<title>Book your showing</title>
+<div class="col-lg-8" style="position: absolute; top: 40px; left: 240px;">Book your showing</div>
+
+ </div>
+ <br><br><br>
+ 	<form>
+ 		<fieldset>
+
+	  				<label>Please select your film :    </label><select name="os">
+
+	  			<option selected>...</option>
+
+	  			<optgroup label="Sunday 5th">
+	  				<option value="ab">6pm - A boy by the sea</option>
+	  				<option value="li">8pm - Life</option>
+	  				<option value="np">10pm - Nos patriotes</option>
+	  				<option value="oc">11pm - Overdrive</option>
+	  			</optgroup>
+	  			<optgroup label="Monday 6th">
+	  				<option value="ga">6pm - Gauguin</option>
+	  				<option value="br">8pm - Blade Runner</option>
+	  				<option value="bo">10pm - Boomerang</option>
+	  				<option value="ki3">11pm - Kings</option>
+	  			</optgroup>
+	  				<optgroup label="Tuesday 7th">
+	  				<option value="gt">6pm - Going to Brazil</option>
+	  				<option value="no">8pm - Nocturma</option>
+	  				<option value="bl">9pm - Black</option>
+	  				<option value="sp3">11pm - 007 Spectre</option>
+	  			</optgroup>
+	  			</optgroup>
+	  				<optgroup label="Wednesday 8th">
+	  				<option value="ta">6pm - Tanna</option>
+	  				<option value="bc">8pm - Broken City</option>
+	  				<option value="jl">9pm - Justice League</option>
+	  				<option value="dw">11pm - Deepwater</option>
+	  			</optgroup>
+	  		</select>
+	  	</p>
+	  			
+	  		</fieldset>
+ 		First name: <input type="name" name="name" placeholder="First name"><br>
+ 		Surname: <input type="name" name="name" placeholder="Surname">
+ 			<p><label for="nombre">Number of tickets: </label> : 
+ 				<select>
+ 					<option>0</option>
+ 					<option>1</option>
+ 					<option>2</option>
+ 					<option>3</option>
+ 					<option>4</option>
+ 					<option>5</option>
+ 					<option>6</option>
+ 					<option>7</option>
+ 					<option>8</option>
+ 					<option>9</option>
+ 					<option>10</option>
+ 				</select>
+ 			</p>
+
+    	
+
+</form>
+<button id="reveal">Book now</button>
+    <div id="ajax-content">
+    </div>
+
+ </body>
+
+  <style type="text/css">
+ 	form{
+ 		margin-left: 100px;
+ 		text-align: left;
+ 		font-size: 20px;
+ 	}
+ 	.col-lg-8{
+ 		font-size: 30px;
+ 		color: white;
+ 		display: inline;
+ 	}
+
+
+
+ 	#header{
+ 		background-color: black;
+ 	}
+ 	input{
+ 		margin-bottom: 30px;
+ 		margin-top: 20px;
+ 	}
+ 	option, optgroup{
+ 		font-size: 15px;
+ 	}
+ 	button
+ 	{
+ 		margin-left: 100px;
+ 	}
+ 	#ajax-content
+ 	{
+ 		font-size: 30px;
+ 		color: green;
+ 		text-align: center;
+ 	}
+ 	body{
+ 		  background: url(images/citycity.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 	}
+
+ </style>
+
+ <script type="text/javascript">
+ 		function openWin() {
+    window.open("index.html","_self");
+ </script>
+
+
+
+
+
+     <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Javascript de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+ <script>
+    $('#reveal').on('click', function() {
+  		$('#ajax-content').load('https://codepen.io/anon/pen/xjPEQQ.html');
+  		$('form, #reveal').hide();
+})
+    </script>
+   
+ </html>

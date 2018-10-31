@@ -1,0 +1,278 @@
+h1{
+	text-align: center;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    width: 100%
+}
+
+
+
+.albert{
+
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.btn{
+	width: 45px;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index:999;
+}
+
+#navItem {
+    float: left;
+}
+
+#navItem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navItem a:hover {
+    background-color: #111;
+}
+
+h2{
+	text-align: center;
+	font-size: 40px;
+}
+
+article{
+	font-size: 20px;
+	text-align: justify;
+}
+
+h3{
+	text-align: center;
+
+}
+
+.dattes{
+	font-size: 40px;
+
+	color: #e65c00;
+}
+
+.dattess{
+		font-size: 40px;
+
+	color: #da5e0b;
+}
+
+.carousel-indicators{
+	text-align: center;
+}
+
+h4{
+	text-align: center;
+	color: #cc2900;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#synopsis1{
+	font-size: 16px;
+}
+
+#firstFilm{
+	position: relative;
+	left: 210px;
+	font-size: 30px;
+}
+
+#secondFilm{
+	position: relative;
+	left: 0px;
+	top: -50px;px;
+	font-size: 30px;
+}
+
+.filmMargin{
+	margin-bottom: 30px;
+}
+
+#showings{
+	text-align: center;
+}
+
+
+ #box{
+ 	background-color: #cc2900;
+ 	margin-left: 50px;
+ 	margin-right: 50px;
+ 	border-radius: 0px 30px 0px 30px;
+ 	height: 20%;
+ 	color: white;
+ 	margin-bottom: 10px;	
+ }
+
+ h5{
+ 	font-size: 30px;
+ 	text-align: center;
+ }
+
+ summary{
+ 	float: right;
+ 	margin-right: 50px;
+ 	margin-top: 5px;	
+ }
+
+ #newsArticle{
+ 	margin-right: 30px;
+ 	margin-left: 30px;
+ 	padding-top: 10px;
+  padding-bottom: 25px;
+
+ }
+#sendButton{
+	margin-right: 10px;
+	width: 60px;
+}
+
+footer{
+	background-color: lightgrey;
+	position: absolute;
+    bottom: 0;
+    background: #444444;
+    height: 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    padding: 20px;
+    height: auto;
+}
+
+
+
+
+u{
+	font-weight: bold;
+}
+
+
+.textWithBlurredBg{
+    width:300px;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .textWithBlurredBg img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .textWithBlurredBg:hover img{
+    filter:blur(2px) brightness(60%);
+  }
+   
+  .textWithBlurredBg :not(img){
+    position:absolute;
+    z-index:0;
+    top:30%;
+    width:90%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textWithBlurredBg h3{
+    top:50%
+  }
+  
+  .textWithBlurredBg:hover :not(img){
+    opacity:1;
+  }
+
+  #showTime{
+  	text-align: center;
+  	font-size: 30px;
+
+
+  }
+
+  #sneakyTitles{
+  	border: 1px solid black;
+  	height: 80px;
+  	margin: 10px 20px 20px 20px;
+  	border-radius: 20px 20px 20px 20px;
+  	background-color: #cc2900;
+
+	color: white;
+}
+
+  #timeShowings{
+  		border: 1px solid black;
+  	height: 40px;
+  	margin: 0px 20px 20px 20px;
+  	border-radius: 20px 20px 20px 20px;
+  	text-shadow: 20px 20px 20px 20px;
+  	background-color: lightgray;
+  }
+
+#datesLocation{
+	font-size: 19px;
+	text-align: justify;
+	line-height: 34px;
+}
+
+#aboutAbout{
+	font-size: 19px;
+	text-align: justify;
+	line-height: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+button{
+	background-color: #cc2900;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#theAboutPicture{
+	height: 318px;
+	width: 476px;
+	margin-left: 15px;
+  margin-right: 25px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body{
+	  background: url(images/citycity.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#theMainPicture{
+   max-height: 123%;
+   max-width:100%;
+   height:auto;
+}
